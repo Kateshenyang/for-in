@@ -17,9 +17,9 @@ export function orderByProps(obj, order) {
     restProps.sort((a, b) => a.key.localeCompare(b.key));
 
     return [...orderedProps, ...restProps];
-};
+}
 
-export default async function run({execution_id, input, data, store}) {
+export default async function run({}) {
 
     return {
 
