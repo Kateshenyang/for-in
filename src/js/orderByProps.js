@@ -3,7 +3,7 @@ export function orderByProps(obj, order) {
     const restProps = [];
 
     for (const prop of order) {
-        if (obj.hasOwnProperty(prop)) {
+        if (Object.prototype.hasOwnProperty.call(obj, prop)) {
             orderedProps.push({ key: prop, value: obj[prop] });
         }
     }
@@ -17,10 +17,11 @@ export function orderByProps(obj, order) {
     restProps.sort((a, b) => a.key.localeCompare(b.key));
 
     return [...orderedProps, ...restProps];
-}
+};
 
 export default async function run({execution_id, input, data, store}) {
 
     return {
+
     };
 }
