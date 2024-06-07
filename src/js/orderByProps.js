@@ -19,7 +19,7 @@ export function orderByProps(obj, order) {
     return [...orderedProps, ...restProps];
 }
 
-export default async function run({}) {
+export default async function run() {
 
     return {
 
